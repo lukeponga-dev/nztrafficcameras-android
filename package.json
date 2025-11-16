@@ -10,10 +10,16 @@
     "test": "jest"
   },
   "dependencies": {
+    "@react-native/new-app-screen": "0.82.1",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "morgan": "^1.10.1",
+    "node-cache": "^5.1.2",
+    "p-limit": "^7.2.0",
     "react": "19.1.1",
     "react-native": "0.82.1",
-    "@react-native/new-app-screen": "0.82.1",
-    "react-native-safe-area-context": "^5.5.2"
+    "react-native-safe-area-context": "^5.5.2",
+    "undici": "^7.16.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
@@ -37,5 +43,10 @@
   },
   "engines": {
     "node": ">=20"
-  }
+  },
+  "description": "This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using the React Native CLI.",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

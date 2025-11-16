@@ -5,6 +5,37 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Launch Edge",
+            "request": "launch",
+            "type": "msedge",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Attach to Edge",
+            "port": 9222,
+            "request": "attach",
+            "type": "msedge",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Run eslint",
+            "runtimeExecutable": "eslint",
+            "cwd": "${workspaceFolder}",
+            "args": []
+        },
+        {
+            "name": "Attach",
+            "port": 9229,
+            "request": "attach",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
+        },
+        {
             "name": "Run Android Hermes",
             "request": "launch",
             "type": "reactnativedirect",
@@ -25,7 +56,7 @@
             "type": "reactnative",
             "request": "launch",
             "platform": "android",
-            "enableDebug": false
+            "enableDebug": true
         },
         {
             "name": "Debug iOS",
